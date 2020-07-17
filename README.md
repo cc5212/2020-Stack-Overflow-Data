@@ -80,6 +80,25 @@ Se divide en dos partes:
 |      13653       |      Netherlands      |      
 
 2. Luego se Toma un "Location" específico ("United States") y se retornan todos los usuarios que pertenezcan a esta "Location" ordenados de acuerdo a su reputación en el sitio.
+
+* ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
+Esta consulta se implementó en el archivo "Top+1Commenters.pig", la cual filtra todos los comentarios que comienzan con "+1" de la tabla "Comments" y los agrupa según el Id de los usuarios, luego para cada Id se realiza un conteo de la cantidad de comentarios y se asocia al DisplayName de la tabla "Usuarios", con lo que se obtiene una tabla con el nombre de cada usuario y la cantidad de comentarios que han escrito que comienzan con "+1".
+Los primeros 10 resultados se muestran en la siguiente tabla:
+
+
+| UserName                   | Counter |
+|:--------------------------:|:-------:|
+| Alexei Levenkov            | 1054    |
+| trashgod                   | 975     |
+| Peter Lawrey               | 829     |
+| WhozCraig                  | 689     |
+| MarkJ                      | 632     |
+| Mawg says reinstate Monica | 614     |
+| S.Lott                     | 531     |
+| David Heffernan            | 444     |
+| camickr                    | 437     |
+| David Rodríguez - dribeas  | 411     |
+
 ## Conclusion
 
 ## Appendix?
