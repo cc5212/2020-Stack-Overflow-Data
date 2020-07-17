@@ -61,8 +61,9 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerCountry.pig".
 Se divide en dos partes:
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
-| Cantidad De Usuarios| País  |
-|:---------------:|:------------------:|
+
+| Cantidad De Usuarios| País           |
+|:-----------------: |:-----------------:|
 |     73627        |        India      |     
 |       41073      |    United States  |        
 |       35867      |     Germany       |           
