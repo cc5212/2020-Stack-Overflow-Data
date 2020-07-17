@@ -86,6 +86,11 @@ Se divide en dos partes:
 |       13768      |       Egypt       |      
 |      13653       |      Netherlands      |  
 
+<p>
+  <img src="https://raw.githubusercontent.com/cc5212/2020-Stack-Overflow-Data/master/results/userspercountry.png" width="800" title="Países con mas Usuarios">
+</p>
+
+
 * ¿Cualés son los usuarios con mayor Reputación dado una Localización Específica?
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerLocation.pig".
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
@@ -108,6 +113,9 @@ Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la 
 |          79938     |    Derek 朕會功夫   |   United States   |
 |          79323     |     Reinstate Monica  |   United States   |
 
+<p>
+  <img src="https://raw.githubusercontent.com/cc5212/2020-Stack-Overflow-Data/master/results/topusersUsa.png" width="800" title="Usuarios Mayor Rep Estados Unidos">
+</p>
 
 
 * ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
