@@ -112,7 +112,7 @@ Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la 
 
 * ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
 Esta consulta se implementó en el archivo "Top+1Commenters.pig", la cual filtra todos los comentarios que comienzan con "+1" de la tabla "Comments" y los agrupa según el Id de los usuarios, luego para cada Id se realiza un conteo de la cantidad de comentarios y se asocia al DisplayName de la tabla "Usuarios", con lo que se obtiene una tabla con el nombre de cada usuario y la cantidad de comentarios que han escrito que comienzan con "+1".
-Los primeros 10 resultados se muestran en la siguiente tabla:
+Los primeros 10 resultados se muestran en la siguiente tabla y gráfico:
 
 
 | UserName                   | Counter |
@@ -127,6 +127,10 @@ Los primeros 10 resultados se muestran en la siguiente tabla:
 | David Heffernan            | 444     |
 | camickr                    | 437     |
 | David Rodríguez - dribeas  | 411     |
+
+<p>
+  <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/top+1.png" width="800" title="Top Comentaristas de +1">
+</p>
 
 ## Conclusion
 De este trabajo se puede concluir que para manipular millones de tuplas, Apache Pig es una excelente herramienta para realizar map/reduce, además de proveer una sintaxis muy parecida a SQL, permitiendo una fácil adaptación a usuarios nuevos.
