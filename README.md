@@ -62,7 +62,7 @@ Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la 
 Se divide en dos partes:
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
     
-2.Luego de agrupar por "Location", se cuenta el contenido de cada grupo, y se ordena descendientemente
+2. Luego de agrupar por "Location", se cuenta el contenido de cada grupo, y se ordena descendientemente
 
 
 | Cantidad De Usuarios| País           |
