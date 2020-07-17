@@ -131,4 +131,4 @@ De este trabajo se puede concluir que para manipular millones de tuplas, Apache 
 Con respecto a los datos, se puede concluir que mediante el análisis de datos de millones de tuplas, los jobs en el cluster pueden llegar a consumir mucho tiempo de ejecución para algunas consultas (+9hrs).
 
 
-Además se puede verificar la confiabilidad de los datasets al ser dumps provenientes de fuentes confialbes ("Kagle y Stackexchenge"), los resultados obtenidos calzan con los resultados esperados validando aún más el dataset.
+Además se puede verificar la confiabilidad de los datasets al ser dumps provenientes de fuentes confialbes ("Kagle y StackExchange"), los resultados obtenidos calzan con los resultados esperados validando aún más el dataset.
