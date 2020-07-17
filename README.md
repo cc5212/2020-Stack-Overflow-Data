@@ -58,7 +58,7 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 |      Total      |      12485155      |        9157040       |               73.34              |
 
 * ¿Que países reportan mayo cantidad de usuarios?
-Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerCountry.pig".
+Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopStackoverflowLocations.pig".
 Se divide en dos partes:
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
     
@@ -83,6 +83,7 @@ Se divide en dos partes:
 |      13653       |      Netherlands      |  
 
 * ¿Cualés son los usuarios con mayor Reputación dado una Localización Específica?
+Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerLocation.pig".
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
 2. Luego se Toma un "Location" específico ("United States") y se retornan todos los usuarios que pertenezcan a esta "Location" ordenados de acuerdo a su reputación en el sitio.
 
