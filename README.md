@@ -63,24 +63,26 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 * ¿Que países reportan mayor cantidad de usuarios?
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerCountry.pig".
 Se divide en dos partes:
-1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
 
-| Cantidad De Usuarios| País           |
-|:-----------------: |:-----------------:|
-|     73627        |        India      |     
-|       41073      |    United States  |        
-|       35867      |     Germany       |           
-|       27166      |       China       |   
-|       21291      |     Francia       |    
-|       19504      |  United Kingdom   |      
-|       18123      |       Indonesia   |       
-|       17786      |       Philippines |        
-|       15227      |       Singapore   |       
-|       14866      |       Pakistan    |     
-|       14538      |       Canada      |     
-|       14846      |       Israel      |       
-|       13768      |       Egypt       |      
-|      13653       |      Netherlands      |      
+1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location".
+Los resultados de esta primera parte se presentan en la siguiente tabla:
+
+| Cantidad De Usuarios|     País       |
+|:-------------------:|:--------------:|
+|         73627       |     India      |     
+|         41073       | United States  |        
+|         35867       |    Germany     |           
+|         27166       |    China       |   
+|         21291       |   Francia      |    
+|         19504       | United Kingdom |      
+|         18123       |   Indonesia    |       
+|         17786       |   Philippines  |        
+|         15227       |   Singapore    |       
+|         14866       |   Pakistan     |     
+|         14538       |   Canada       |     
+|         14846       |   Israel       |       
+|         13768       |   Egypt        |      
+|         13653       |  Netherlands   |      
 
 2. Luego se Toma un "Location" específico ("United States") y se retornan todos los usuarios que pertenezcan a esta "Location" ordenados de acuerdo a su reputación en el sitio.
 
