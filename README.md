@@ -5,7 +5,7 @@ Project for group 19 [Cristóbal Sepúlveda Á, Fabián Jaña, Maximiliano Aguil
 El objetivo del proyecto consiste en aplicar técnicas de procesamiento masivo de datos para analizar el conjunto de datos seleccionado (Stack Overflow), el cual será descrito
 más adelante, este análisis tratará de responder preguntas como:
 * ¿Cuántos usuarios activos e inactivos tiene actualmente (año 2020) el sitio Stack Overflow?
-* ¿Que países reportan mayor cantidad de usuarios?
+* ¿Que países reportan mayo cantidad de usuarios?
 * ¿Cuales son los usuarios con mayor reputación definiendo una locación o país?
 * ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
 
@@ -57,34 +57,53 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 |       2020      |          0         |        971998        |                 0                |
 |      Total      |      12485155      |        9157040       |               73.34              |
 
-<p>
-  <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/UsuariosInactivos.png?raw=true" width="800" title="Usuarios inactivos en 2020">
-</p>
-* ¿Que países reportan mayor cantidad de usuarios?
+* ¿Que países reportan mayo cantidad de usuarios?
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerCountry.pig".
 Se divide en dos partes:
+1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
+    
+2.Luego de agrupar por "Location", se cuenta el contenido de cada grupo, y se ordena descendientemente
 
-1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location".
-Los resultados de esta primera parte se presentan en la siguiente tabla:
 
-| Cantidad De Usuarios|     País       |
-|:-------------------:|:--------------:|
-|         73627       |     India      |     
-|         41073       | United States  |        
-|         35867       |    Germany     |           
-|         27166       |    China       |   
-|         21291       |   Francia      |    
-|         19504       | United Kingdom |      
-|         18123       |   Indonesia    |       
-|         17786       |   Philippines  |        
-|         15227       |   Singapore    |       
-|         14866       |   Pakistan     |     
-|         14538       |   Canada       |     
-|         14846       |   Israel       |       
-|         13768       |   Egypt        |      
-|         13653       |  Netherlands   |      
+| Cantidad De Usuarios| País           |
+|:-----------------: |:-----------------:|
+|     73627        |        India      |     
+|       41073      |    United States  |        
+|       35867      |     Germany       |           
+|       27166      |       China       |   
+|       21291      |     Francia       |    
+|       19504      |  United Kingdom   |      
+|       18123      |       Indonesia   |       
+|       17786      |       Philippines |        
+|       15227      |       Singapore   |       
+|       14866      |       Pakistan    |     
+|       14538      |       Canada      |     
+|       14846      |       Israel      |       
+|       13768      |       Egypt       |      
+|      13653       |      Netherlands      |  
 
+* ¿Cualés son los usuarios con mayor Reputación dado una Localización Específica?
+1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
 2. Luego se Toma un "Location" específico ("United States") y se retornan todos los usuarios que pertenezcan a esta "Location" ordenados de acuerdo a su reputación en el sitio.
+
+| Reputación         | Nombre De Usuario | País              |
+|:-----------------:|:-----------------:|:-----------------:|
+|       98872        | Legend      |   United States   |
+|       98815     | Charlie Martin      |   United States   |
+|      94423         |   apsillers    |   United States   |
+|       93356        |  Carl Meyer      |   United States   |
+|          92558     |   Peter Hosey    |   United States   |
+|            91170   | AnApprentice      |   United States   |
+|         87036      |    Michael Gundlach   |   United States   |
+|       85554        | Bob      |   United States   |
+|       83688        | Ben Gottlieb      |   United States   |
+|           83540    |    Ahmad Mageed   |   United States   |
+|           82958    |  NotMe     |   United States   |
+|          82597    | mmcdole      |   United States   |
+|          79938     |    Derek 朕會功夫   |   United States   |
+|          79323     |     Reinstate Monica  |   United States   |
+
+
 
 * ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
 Esta consulta se implementó en el archivo "Top+1Commenters.pig", la cual filtra todos los comentarios que comienzan con "+1" de la tabla "Comments" y los agrupa según el Id de los usuarios, luego para cada Id se realiza un conteo de la cantidad de comentarios y se asocia al DisplayName de la tabla "Usuarios", con lo que se obtiene una tabla con el nombre de cada usuario y la cantidad de comentarios que han escrito que comienzan con "+1".
