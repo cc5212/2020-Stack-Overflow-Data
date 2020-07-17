@@ -59,7 +59,7 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 
 Se presenta además un gráfico que complementa la tabla anterior:
 <p>
-  <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/UsuariosInactivos.png" width="600" title="Usuarios Inactivos 2020">
+  <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/UsuariosInactivos.png" width="800" title="Usuarios Inactivos 2020">
 </p>
 * ¿Que países reportan mayor cantidad de usuarios?
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopStackoverflowLocations.pig".
