@@ -5,7 +5,7 @@ Project for group 19 [Cristóbal Sepúlveda Á, Fabián Jaña, Maximiliano Aguil
 El objetivo del proyecto consiste en aplicar técnicas de procesamiento masivo de datos para analizar el conjunto de datos seleccionado (Stack Overflow), el cual será descrito
 más adelante, este análisis tratará de responder preguntas como:
 * ¿Cuántos usuarios activos e inactivos tiene actualmente (año 2020) el sitio Stack Overflow?
-* ¿Que países reportan mayo cantidad de usuarios?
+* ¿Que países reportan mayor cantidad de usuarios?
 * ¿Cuales son los usuarios con mayor reputación definiendo una locación o país?
 * ¿Cuáles son los usuarios que han escrito mayor cantidad de comentrios comenzando con "+1"?
 
@@ -60,7 +60,7 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 <p>
   <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/UsuariosInactivos.png?raw=true" width="800" title="Usuarios inactivos en 2020">
 </p>
-* ¿Que países reportan mayo cantidad de usuarios?
+* ¿Que países reportan mayor cantidad de usuarios?
 Para responder a esta pregunta se realizó, nuevamente, una consulta de Pig, la cual está disponible en el archivo "TopUsersPerCountry.pig".
 Se divide en dos partes:
 1. Primero se agrupa a los usuarios por su atributo "Location" (descrito en la sección "Data") y se realiza un conteo para entregar usuarios clasificados por "Location"
