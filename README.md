@@ -57,7 +57,7 @@ Se presenta a continuación una tabla con los resultados obtenidos:
 |       2020      |          0         |        971998        |                 0                |
 |      Total      |      12485155      |        9157040       |               73.34              |
 
-<p align="center">
+<p>
   <img src="https://github.com/cc5212/2020-Stack-Overflow-Data/blob/master/UsuariosInactivos.png?raw=true" width="800" title="Usuarios inactivos en 2020">
 </p>
 * ¿Que países reportan mayo cantidad de usuarios?
