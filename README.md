@@ -125,6 +125,6 @@ Los primeros 10 resultados se muestran en la siguiente tabla:
 | David Rodríguez - dribeas  | 411     |
 
 ## Conclusion
-
-## Appendix?
-
+De este trabajo se puede concluir que para manipular millones de tuplas, Apache Pig es una excelente herramienta para realizar map/reduce, además de proveer una sintaxis muy parecida a SQL, permitiendo una fácil adaptación a usuarios nuevos.
+Con respecto a los datos, se puede concluir que mediante el análisis de datos de millones de tuplas, los jobs en el cluster pueden llegar a consumir mucho tiempo de ejecución para algunas consultas (+9hrs).
+Además se puede verificar la confiabilidad de los datasets al ser dumps provenientes de fuentes confialbes ("Kagle y Stackexchenge"), los resultados obtenidos calzan con los resultados esperados validando aún más el dataset.
